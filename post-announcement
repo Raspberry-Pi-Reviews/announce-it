@@ -3,10 +3,10 @@
 # npm, node js, npx (sudo apt install nodejs npm -y) for https://github.com/vercel/serve
 import os
 user=os.getenv("USER")
-#os.system("rm /home/"+user+"/message_board/messageboard.html")
-#os.system("touch /home/"+user+"/message_board/messageboard.html")
+#os.system("rm /etc/announce_board/index.html")
+#os.system("touch /etc/announce_board/index.html")
 message=input("Message?")
-announce_board=open("/home/"+user+"/message_board/messageboard.html","a")
+announce_board=open("/etc/announce_board/index.html","a")
 announce_board.write("""
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ announce_board.write("""
 <h1>
 """+message+"</h1>")
 announce_board.close
-os.chdir("/home/"+user+"/message_board/")
+os.chdir("/etc/announce_board/index.html")
 os.system("pwd")
 #os.system("npx serve")
 os.system("serve")
