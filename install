@@ -7,3 +7,5 @@
 sudo apt install nodejs npm -y
 npm install serve -g
 sudo apt-get install systemd -y
+mkdir /etc/announce_board/
+chmod 777 /etc/announce_board/
