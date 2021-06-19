@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Download scripts and move them to /bin
+
+
+# Install dependencies
+sudo apt install nodejs npm -y
+npm install serve -g
