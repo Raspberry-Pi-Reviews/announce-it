@@ -1,8 +1,15 @@
 #!/bin/bash
 
 # Download scripts and move them to /bin
-
-
+cd
+git clone https://github.com/slashtechno/announce-it.git
+cd announce-it
+sudo cp announce-it /bin
+sudo cp post-announcement /bin
+sudo chmod +x /bin/post-announcement
+sudo chmod +x /bin/announce-it
+cd ..
+rm -r announce-it
 # Install dependencies
 sudo apt install nodejs npm -y
 npm install serve -g
