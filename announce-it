@@ -1,0 +1,4 @@
+#!/bin/bash
+announcement_send
+cd /etc/announce_board/
+serve
