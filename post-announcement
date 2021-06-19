@@ -1,0 +1,25 @@
+#!/bin/python3
+# Dependencies:
+# npm, node js, npx (sudo apt install nodejs npm -y) for https://github.com/vercel/serve
+import os
+user=os.getenv("USER")
+#os.system("rm /home/"+user+"/message_board/messageboard.html")
+#os.system("touch /home/"+user+"/message_board/messageboard.html")
+message=input("Message?")
+announce_board=open("/home/"+user+"/message_board/messageboard.html","a")
+announce_board.write("""
+
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="refresh" content="1" ></head>
+<body>
+<br>
+"""+"""
+
+<h1>
+"""+message+"</h1>")
+announce_board.close
+os.chdir("/home/"+user+"/message_board/")
+os.system("pwd")
+#os.system("npx serve")
+os.system("serve")
