@@ -1,2 +1,2 @@
 #!/bin/bash
-serve
+serve /etc/announce_board
