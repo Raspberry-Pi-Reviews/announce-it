@@ -14,7 +14,7 @@ cd ..
 sudo rm -r announce-it
 # Install dependencies
 sudo apt install nodejs npm -y
-npm install serve -g
+sudo npm install serve -g
 sudo apt-get install systemd -y
 sudo mkdir /etc/announce_board/
 sudo chmod 777 /etc/announce_board/
