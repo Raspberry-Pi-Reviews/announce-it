@@ -1,4 +1,0 @@
-#!/bin/bash
-post-announcement
-cd /etc/announce_board/
-serve
