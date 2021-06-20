@@ -10,11 +10,15 @@ sudo cp serveit /bin
 sudo chmod +x /bin/post-announcement
 sudo chmod +x /bin/announce-it
 sudo chmod +x /bin/serveit
-cd ..
-sudo rm -r announce-it
+sudo cp announce-it.service /etc/systemd/system/announce-it.service
+sudo systemctl daemon-reload
+sudo systemctl enable announce-it.service
+sudo systemctl start announce-it.service
 # Install dependencies
 sudo apt install nodejs npm -y
 sudo npm install serve -g
 sudo apt-get install systemd -y
 sudo mkdir /etc/announce_board/
 sudo chmod 777 /etc/announce_board/
+cd ..
+sudo rm -r announce-it
