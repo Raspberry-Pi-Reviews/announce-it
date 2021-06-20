@@ -9,10 +9,10 @@ sudo cp post-announcement /bin
 sudo chmod +x /bin/post-announcement
 sudo chmod +x /bin/announce-it
 cd ..
-rm -r announce-it
+sudo rm -r announce-it
 # Install dependencies
 sudo apt install nodejs npm -y
 npm install serve -g
 sudo apt-get install systemd -y
-mkdir /etc/announce_board/
-chmod 777 /etc/announce_board/
+sudo mkdir /etc/announce_board/
+sudo chmod 777 /etc/announce_board/
