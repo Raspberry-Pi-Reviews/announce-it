@@ -5,9 +5,9 @@ cd
 git clone https://github.com/slashtechno/announce-it.git
 cd announce-it
 sudo cp announce-it /bin
-sudo cp post-announcement /bin
+#sudo cp post-announcement /bin
 sudo cp serveit /bin
-sudo chmod +x /bin/post-announcement
+#sudo chmod +x /bin/post-announcement
 sudo chmod +x /bin/announce-it
 sudo chmod +x /bin/serveit
 sudo cp announce-it.service /etc/systemd/system/announce-it.service
