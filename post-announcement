@@ -19,7 +19,7 @@ announce_board.write("""
 <h1>
 """+message+"</h1>")
 announce_board.close
-os.chdir("/etc/announce_board/index.html")
+os.chdir("/etc/announce_board/")
 os.system("pwd")
 #os.system("npx serve")
 os.system("serve")
