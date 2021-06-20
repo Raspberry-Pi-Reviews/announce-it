@@ -22,4 +22,3 @@ announce_board.close
 os.chdir("/etc/announce_board/")
 os.system("pwd")
 #os.system("npx serve")
-os.system("serve")
