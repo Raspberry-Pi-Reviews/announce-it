@@ -13,3 +13,6 @@ Announcement board that can be pushed to through the terminal and viewed with a 
 
 ### To update (clears annoucements)
 `wget -qO- https://raw.githubusercontent.com/slashtechno/announce-it/main/update | bash`
+
+### To-Do:  
+- [ ] Allow users to clear announcements
