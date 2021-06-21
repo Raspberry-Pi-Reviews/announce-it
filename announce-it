@@ -5,9 +5,13 @@ import os
 user=os.getenv("USER")
 #os.system("rm /etc/announce_board/index.html")
 #os.system("touch /etc/announce_board/index.html")
-message=input("Message?")
-announce_board=open("/etc/announce_board/index.html","a")
-announce_board.write("""
+while True:
+	option=input("What would you like to do?\n1) Announce a message\n2) Clear announcement board\n3) exit")
+	option=int(option)
+	if option == 1:
+		message=input("Message?")
+		announce_board=open("/etc/announce_board/index.html","a")
+		announce_board.write("""
 
 <!DOCTYPE html>
 <html>
@@ -18,7 +22,11 @@ announce_board.write("""
 
 <h1>
 """+message+"</h1>")
-announce_board.close
-os.chdir("/etc/announce_board/")
-os.system("pwd")
+		announce_board.close
+		os.chdir("/etc/announce_board/")
+		os.system("pwd")
 #os.system("npx serve")
+	elif option == 2:
+		os.system("sudo rm /etc/announce_board/index.html")
+	elif option == 3:
+		exit()
