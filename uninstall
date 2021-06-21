@@ -1,0 +1,4 @@
+sudo rm /bin/announce-it
+sudo rm /bin/serveit
+sudo rm /etc/systemd/system/announce-it.service
+sudo rm -r /etc/announce_board/
