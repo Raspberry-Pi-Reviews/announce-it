@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo rm /bin/announce-it
 sudo rm /bin/serveit
 sudo rm /etc/systemd/system/announce-it.service
