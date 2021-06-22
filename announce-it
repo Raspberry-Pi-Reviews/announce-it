@@ -24,7 +24,7 @@ while True:
 """+message+"</h1>")
 		announce_board.close
 		os.chdir("/etc/announce_board/")
-		os.system("pwd")
+#		os.system("pwd")
 		print("\n\nExit the program for changes to take effect")
 #os.system("npx serve")
 	elif option == 2:
