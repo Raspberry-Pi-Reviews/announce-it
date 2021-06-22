@@ -1,2 +1,2 @@
 #!/bin/bash
-serve /etc/announce_board
+serve /etc/announce_board -p 4096
