@@ -25,8 +25,10 @@ while True:
 		announce_board.close
 		os.chdir("/etc/announce_board/")
 		os.system("pwd")
+		print("\n\nExit the program for changes to take effect")
 #os.system("npx serve")
 	elif option == 2:
 		os.system("sudo rm /etc/announce_board/index.html")
+		print("\n\nExit the program for changes to take effect")
 	elif option == 3:
 		exit()
