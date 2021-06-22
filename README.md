@@ -19,4 +19,4 @@ For example, `<server ip>:4096` replacing `<server ip>` with your IP (which can 
 `wget -qO- https://raw.githubusercontent.com/slashtechno/announce-it/main/update | bash`
 
 ### To-Do:  
-- [ ] Allow users to clear announcements
+- [X] Allow users to clear announcements
