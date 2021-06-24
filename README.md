@@ -1,4 +1,4 @@
-# announce-it
+# Announce it
 Announcement board that can be pushed to through the terminal and viewed with a web browser.
 
 ### To install
